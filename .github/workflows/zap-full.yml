@@ -53,6 +53,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue_title: 'ZAP Full Scan Report'
           fail_action: false
+          artifact_name: 'zap-full-scan'
 
       - name: Upload ZAP Full Report (HTML)
         uses: actions/upload-artifact@v4

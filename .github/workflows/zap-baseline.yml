@@ -49,6 +49,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue_title: 'ZAP Baseline Scan Report'
           fail_action: false
+          artifact_name: 'zap-baseline-scan'
 
       - name: Upload ZAP Baseline Report
         uses: actions/upload-artifact@v4
